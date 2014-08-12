@@ -1,6 +1,6 @@
 
 import UIKit
-
+import QuartzCore
 protocol ChannelProtocol{
     func onChannelChanged(channel_id:String)
 }
@@ -24,6 +24,13 @@ class ChannelController: UIViewController, UITableViewDelegate,UITableViewDataSo
     
     func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int{
         return self.channelData.count
+    }
+    
+    func tableView(tableView: UITableView!, willDisplayCell cell: UITableViewCell!, forRowAtIndexPath indexPath: NSIndexPath!){
+        cell.layer.transform=CATransform3DMakeScale(0.1, 0.1, 1)
+        UIView.animateWithDuration(0.25, animations: { () -> Void in
+            cell.layer.transform=CATransform3DMakeScale(1, 1, 1)
+        })
     }
 
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!{
