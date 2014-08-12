@@ -89,12 +89,12 @@
 			children = (
 				F18BC8CB1999016200C168AF /* images */,
 				F18BC8AE1998FEA300C168AF /* AppDelegate.swift */,
+				F18BC8D6199911CA00C168AF /* HttpController.swift */,
 				F18BC8B01998FEA300C168AF /* ViewController.swift */,
 				F18BC8D4199907FE00C168AF /* ChannelController.swift */,
 				F18BC8B21998FEA300C168AF /* Main.storyboard */,
 				F18BC8B51998FEA300C168AF /* Images.xcassets */,
 				F18BC8AC1998FEA300C168AF /* Supporting Files */,
-				F18BC8D6199911CA00C168AF /* HttpController.swift */,
 			);
 			path = DBFM;
 			sourceTree = "<group>";
@@ -429,6 +429,7 @@
 				F18BC8C71998FEA300C168AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F18BC8C81998FEA300C168AF /* Build configuration list for PBXNativeTarget "DBFMTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +438,7 @@
 				F18BC8CA1998FEA300C168AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
